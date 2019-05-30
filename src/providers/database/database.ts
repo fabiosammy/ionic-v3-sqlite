@@ -43,7 +43,7 @@ export class DatabaseProvider {
   }
 
   private insertDefaultItems(db: SQLiteObject) {
-    db.executeSql('select COUNT(id) as qtd from radios', {})
+    db.executeSql('select COUNT(id) as qtd from radios', [])
       .then((data: any) => {
         if (data.rows.item(0).qtd == 0) {
           db.sqlBatch([
