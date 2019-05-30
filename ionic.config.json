@@ -1,0 +1,7 @@
+{
+  "name": "teste-sqlite",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
