@@ -7,5 +7,8 @@
 </ion-header>
 
 <ion-content padding>
-
+  <ion-item *ngFor="let radio of radios">
+    <h2>{{radio.name}}</h2>
+    <p>{{radio.url}} - {{radio.thumb}}</p>
+  </ion-item>
 </ion-content>
