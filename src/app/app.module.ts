@@ -13,6 +13,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DatabaseProvider } from '../providers/database/database';
+import { RadioProvider } from '../providers/radio/radio';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { DatabaseProvider } from '../providers/database/database';
     SplashScreen,
     SQLite,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    DatabaseProvider
+    DatabaseProvider,
+    RadioProvider
   ]
 })
 export class AppModule {}
